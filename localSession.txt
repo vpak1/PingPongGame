@@ -1,0 +1,9 @@
+
+kolya
+Wins 0
+Loses 0
+Highest Score 7
+vika
+Wins 1
+Loses 1
+Highest Score 19

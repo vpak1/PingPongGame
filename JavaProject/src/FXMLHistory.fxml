@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" spacing="10.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HistoryController">
+    <children>
+            <Label fx:id="title" style="-fx-text-fill: white; -fx-font-size: 16;" text="History">
+                <font> 
+                    <Font size="16" /> 
+                </font>
+            </Label>
+            <Label fx:id="history" style="-fx-text-fill: white;" />
+            <HBox alignment="BOTTOM_CENTER">
+                <Button fx:id="back" onAction="#goBack" prefWidth="200" text="Back">
+                    <HBox.margin>
+                        <Insets left="50" right="50" top="100" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="fullHistory" onAction="#showFull" prefWidth="200" text="View Full History">
+                     <HBox.margin>
+                        <Insets left="50" right="50" top="100" />
+                    </HBox.margin>
+                    </Button>
+            </HBox>
+    </children>
+</VBox>

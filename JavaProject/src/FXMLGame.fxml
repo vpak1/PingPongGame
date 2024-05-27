@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <Label fx:id="pName1" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 18;" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="pScore1" style="-fx-font-size: 32;" text="Score" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="450.0" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <Label fx:id="pScore2" style="-fx-font-size: 32;" text="Score" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="150.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="pName2" alignment="CENTER" contentDisplay="RIGHT" style="-fx-font-size: 18;" text="Label" textAlignment="CENTER" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle fx:id="pad1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="0"   layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" width="18.0" />
+      <Rectangle fx:id="pad2" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f"    height="200.0" layoutX="880" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" width="18.0" />
+      
+      <Circle fx:id="ball" fill="WHITE" layoutX="450.0" layoutY="335.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="11.0" endY="422.99993896484375" layoutX="439.0" layoutY="277.0" startX="11.0" startY="-281.70709228515625" stroke="WHITE" />
+      <Label fx:id="gameOver" alignment="CENTER" layoutX="35.0" layoutY="143.0" prefHeight="219.0" prefWidth="831.0" style="-fx-font-size: 120; -fx-font-weight: bold;" textFill="RED" />
+      <Label fx:id="playerWin" alignment="CENTER" layoutX="321.0" layoutY="327.0" prefHeight="58.0" prefWidth="259.0" style="-fx-font-size: 40; -fx-font-weight: bold;" textFill="RED" />
+      <Label fx:id="instruction" alignment="CENTER" layoutX="343.0" layoutY="396.0" prefHeight="17.0" prefWidth="215.0" style="-fx-font-size: 13; -fx-font-weight: bold;" textFill="WHITE" />
+
+      <!-- <Button fx:id="retry" layoutX="450.0" layoutY="615.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: black; -fx-font-size: 15; -fx-font-weight: bold;" textFill="WHITE"/> -->
+   </children>
+</AnchorPane>

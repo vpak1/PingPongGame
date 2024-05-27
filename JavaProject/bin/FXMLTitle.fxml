@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER"
+      maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="700.0" prefWidth="900.0"
+      spacing="10.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="TitleController">
+    <children>
+        <Label fx:id="title" text="PingPong">
+            <font>
+                <Font size="16" /> 
+            </font>
+        </Label>
+        <Label fx:id="player1" text="Player1:"/>
+        <TextField fx:id="playerName1" maxWidth="200" />
+        <Label fx:id="player2" text="Player2:"/>
+        <TextField fx:id="playerName2" maxWidth="200" />
+        <Button fx:id="start" mnemonicParsing="false" text="Start" prefWidth="200">
+            <VBox.margin>
+                <Insets top="40"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="history" mnemonicParsing="false" text="View History" onAction="#processHistory" prefWidth="200">
+            <VBox.margin>
+                <Insets top="5"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="exit" mnemonicParsing="false" text="Exit" onAction="#askExitConfirmation" prefWidth="200">
+            <VBox.margin>
+                <Insets top="5"/>
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>
